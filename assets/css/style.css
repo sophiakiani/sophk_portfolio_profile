@@ -84,24 +84,23 @@ table {
   box-sizing: border-box; 
   padding: 0;
   margin:0; 
-  border: red 10px solid;
+  
 }
 
 html {
   width: 100%;
   background: rgb(252, 246, 249);
+  
 }
 
 
 /******************* 3.0 - Navbar *************************/
 nav { 
-  padding:0;
-  margin: 0;
-  position: fixed;
+  position: sticky;
   z-index: 1000;
   background-image:linear-gradient(to top, rgb(255, 255, 255) , rgb(255, 224, 241));
-  border-right: rgb(3, 3, 3) .7em solid;
-  border-bottom: rgb(3, 3, 3) .15em solid;
+  border-right: rgb(3, 3, 3) .2em solid;
+  border-bottom: rgb(3, 3, 3) .75em solid;
   top: 0;
   height: 70px;
   width: 100%;
@@ -126,7 +125,6 @@ nav li  {
   font-size: 1.2em;
   border-radius: 40% 0 40% 0;
   border:rgba(255, 255, 255, 0) solid 2px;
-  box-shadow: black ;
 }
 
 nav img {
@@ -148,115 +146,91 @@ nav a:hover, a:active {
 
 /************************ 4.0 - Hero ********************/
 #about {
-  margin: 0;
-  padding:0;
   position: relative;
   width: 100%;
-  display:flex;
-  flex-direction: column;
+  height: 40em;
   background-image: url(../images/body.jpg);
-  border-bottom: solid black 1em;
+  border-bottom: solid black .3em;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40em;
+  
 }
 
-.name_background_width {
-  width:100%;
+.about_container_main {
+  display:flex;
+  flex-flow: row-reverse;
+  justify-items: center;
+  align-items: center;
+  padding: .25em;
+  
 }
 
-.name_background {
-  text-align: center;
-  margin-top: 10em;
+.about_container_section {
+  margin: 6em 0em;
+  flex: 1;
+  width: 33.3%;
+}
+
+.about_background {
+  padding: 0 0 0 3em;
   background-image:linear-gradient(to right, rgb(255, 255, 255) , rgb(255, 224, 241));
-  right: 0;
-  margin-left:auto;
-  border-radius: 45% 0% 0 45% ;
+  border-radius: 10% 0% 0 10% ;
   border-top: 2px black solid;
   border-bottom: 10px black solid;
-  position:relative;
-  width: 40%;
+  height: 6em;
 }
 
-.name_title {
+.about_background h1{
   text-align:center;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight:100;
   padding: .3em 1em .3em 1em;
-
+  overflow: hidden;
 }
 
-.hero_image {
-  position:relative;
-  width: 100%;
-  height: 300px;
-  background-image: url(../images/body.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
+.about_bio {
+  background-color: rgba(255, 242, 227, 0.8);
+  border-radius: 10% 10% 10% 10%;
+  border-top:rgb(0, 0, 0) 2px solid;
+  border-bottom:rgb(0, 0, 0) .75em solid; 
+  min-height: 18em;
 }
-.picture_bio {
-  position: relative;
+
+.about_bio h2 {
+  flex-shrink: 2;
+  padding: 1em 3em;
+  font-size: 1.5em;
+  font-weight: 100;
+  line-height: 2;
+}
+
+.about_picture  {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  justify-items: center;
   align-content: center;
-  align-items: center;
   justify-content: center;
-  width:100%;
-  margin: 2em 2em;
-  padding: 4em 4em ;
-}
-  
-.bio {
-  position: absolute;
-  margin: 0 4em;
-  background-color: burlywood;
-  border-radius: 90%;
-  border:cornsilk 2px solid;
-  height: 20em;
-  width: 20em;
-  width: 50%;
-}
-
-.bio_text {
-  position: absolute;
-}
-
-
-.my_picture_1 {
-  
-  align-content: center;
   align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 50%;
-  right: 0;
 }
 
-.my_picture_2 {
-  position: absolute;
+.about_picture img {
   border-radius: 100%;
-  height: 24em;
-  width: 24em;
+  height: 18em;
+  width: 18em;
   border:black solid 4px;
 }
 
 /************************ 4.0 - Project *********************/
 #projects {
-  margin: 4em 0 2em 0;
-  padding:0;
   position: relative;
   width: 100%;
-
 }
 
 .project_header {
   text-align: center;
   left: 0;
-  background-image:linear-gradient(to right, rgb(255, 255, 255) , rgb(255, 224, 241));
+  background-image:linear-gradient(to left, rgb(255, 255, 255) , rgb(255, 224, 241));
   position:relative;
-  border-radius: 0 45% 45% 0;
+  border-radius: 0 10% 10% 0;
   border-top: 1px black solid;
   border-bottom: 5px black solid;
   text-align:center;
@@ -264,68 +238,91 @@ nav a:hover, a:active {
   font-weight:200;
   padding: .3em 6em;
   width: 30%;
-  margin: 2em 0 1em 0;
+  margin: 3em 0 2em 0;
 }
 
-/* .project_layout {
-  position:relative;
-  display:flex;
-  text-align: center;
-  flex-flow: column wrap;
-  justify-content: space-around;
-} */
-
 .project_1 {
-  text-align: center;
-  font-size: 1em;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
   width: 100%;
-  margin: 3em 5em;
+  font-size: 1em;
+  margin: 2em 0em 7em;
 }
 
 .project_1 img{
-  position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 30em;
-  height: 20em;
-  border-radius: 20%;
-  border: 0.3em rgb(0, 0, 0) solid;
+  width: 35em;
+  height: 15em;
+  border-radius: 5%;
 }
 
-.project_2 {
-  background-image:linear-gradient(to right, rgb(255, 255, 255) , rgb(255, 224, 241));
-  font-size: 2em;
-  min-height: 3em;
+.project_container_main a {
+  position: relative;
+  display:flex;
+  flex-wrap: row wrap;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+
+.project_2 a {
+  text-align: center;
+  font-size: 1em;
+  flex-flow: row wrap;
   width: 50%;
-  height:50px;
-  margin: 3em 5em;
 }
 
-/* 
-#project a:hover, a:active {
+.project_2 img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35em;
+  height: 15em;
+  border-radius: 5%;
+}
+
+.project_3 a {
+  text-align: center;
+  font-size: 1em;
+  flex-flow: row wrap;
+  width: 50%;
+}
+
+#project_3 img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35em;
+  height: 15em;
+  border-radius: 5%;
+}
+
+.image_container {
+  position: relative;
+  width: 100%;
+  width: 36em;
+  border: .5em solid black;
+  border-radius: 10% 10% 0 0;
+}
+
+.image_title{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  border-radius: 0 10% 0 0;
+  color: #f1f1f1;
+  width: 100%;
+  opacity:1;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.image_container a:hover, a:active {
   background-color: rgba(238, 230, 216, 0.432);
-} */
-
-#project img {
-  margin: 2em 0;
-  padding: 0;
-  overflow: auto;
-  border-radius: 50%;
-  width: 50%;
+  transition: .5s ease;
 }
-
-
-.project_3 {
-  background-image:linear-gradient(to right, rgb(255, 255, 255) , rgb(255, 224, 241));
-  font-size: 2em;
-  min-height: 3em;
-  width: 50%;
-  height:50px;
-  margin: 3em 5em;
-  width: 50%;
-}
-
-
 
 /************************ 5.0 - Footer ********************/
 footer {
@@ -336,9 +333,9 @@ footer {
   width: 100%;
   height: 4em;
   padding: 0;
-  position: absolute;
+  position: sticky;
   justify-content: space-evenly;
-  box-shadow: 5px 10px #888888;
+  margin-top: 10em;
 }
 
 footer ul {
@@ -372,12 +369,20 @@ footer a:hover, a:active {
 
 
 @media screen and (max-width:768px) {
-  .project_2 {
+  
+  nav li,
+  .about_container_section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
     width: 100%;
   }
 }
 
 @media screen and (max-width:576px) {
+  .about_container_section {
+    width: 100%
+  }
   .project_2 {
     height: 100%;
 }

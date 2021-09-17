@@ -21,8 +21,8 @@ First rough draft of my portfolio.
     
 # Link
 `
-    [Check out Horiseon Home Webpage...](https://github.com/soph-k/sophia_kiani_portfolio_profile/)
-    [Or check out the GitHub repository](https://soph-k.github.io/sophia_kiani_portfolio_profile/) 
+    [Check out my portfolio Webpage...](https://github.com/soph-k/sophia_kiani_portfolio_profile/)
+    [Or check out my  GitHub repository for my portfolio website](https://soph-k.github.io/sophia_kiani_portfolio_profile/) 
     
  
 
