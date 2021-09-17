@@ -1,0 +1,296 @@
+/*************************************************************************
+  _____      ______      __       ____       ____       _
+||     \\   | _____|    //\\     | ___\\   / ____|    // \\
+||      \\  ||__       //  \\    ||    || | |___    / /   \ \
+||       || | __|     //____\\   ||___//   \ ____\ | |     | |
+||      //  ||_____  //      \\  || \\     _____ || \ \   / /
+||_____//   |______|//        \\ ||   \\  |_____ /    \\_//
+
+Author: DearSO
+GitHub: https://github.com/soph-k
+Description: Contact Fourm
+
+CSS TABLE OF CONTENTS
+    ===== Base ====
+        |-- 1.0 - Reset
+        |-- 2.0 - Gobal
+        |-- 3.0 - Navbar
+        |-- 4.0 - Hero
+        |-- 5.0 - Header
+            -- 5.1 - SEO Content Image
+        |-- 6.0 - Side Bar Content
+            -- 6.1 - Side Bar Content Image
+        |-- 7.0 - Footer
+
+    ===== Pages ====
+
+*************************************************************************/
+
+
+
+/*************************** 1.0 - Reset *************************/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/********************** 2.0 - Global ***********************/
+* {
+  font-family: "QuickSand";
+  box-sizing: border-box;  
+
+}
+
+
+/************************ 4.0 - Hero ********************/
+.hero {
+  position:absolute;
+  margin:0;
+  padding:0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(../images/body.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.name {
+  display: flex;
+  align-content: flex-end;
+  justify-content: end;
+  float: left;
+  width: 20%;
+  position: relative;
+  background-color: rgb(235, 221, 204);
+  border-radius: 45% 0 0 45%;
+  border: 10px black dotted;
+}
+
+.name_background {
+  padding:.7em;
+  font-size: 4em;
+  font-weight: 100;
+  color: black;
+}
+
+
+/******************* 3.0 - Navbar *************************/
+.navbar { 
+  position: absolute;
+  padding: 0;
+  margin:0;
+  width: 13em;
+  height: 100%;
+  overflow: auto;
+  background-image:linear-gradient(to top, rgb(245, 241, 244) , rgb(235, 221, 204));
+  border-right: rgb(3, 3, 3) 0.25em solid;
+  z-index: 5;
+}
+
+.navbar a {
+  padding: 2em 0.5em;
+  margin: 2.5em 1.5em;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'QuickSand';
+  display: flex;
+  flex-direction: column;
+  align-content: center; 
+}
+ 
+.navbar img {
+  margin: 2em 0;
+  padding: 0;
+  overflow: auto;
+}
+
+a:link, a:visited {
+  color: rgb(14, 32, 48);
+  text-decoration: none;
+  text-align: center;
+}
+.navbar a:hover, a:active {
+  background-color: rgb(255, 255, 255, 0.2);
+  border-radius: 20%;
+  margin: 2.5em 1.5em;
+  border:rgb(255, 255, 255) solid 2px;
+  padding: 2em 0.5em;
+}
+
+.navbar_icon {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 1em;
+  width: 1em;
+}
+
+
+
+
+/************************ 4.0 - Project *********************/
+#projects {
+  position: relative;
+  margin-left: 13em;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: column;
+  
+}
+
+.project_header{
+  margin-top: 4em;
+  position: relative;
+  text-align:center;
+  font-size: 2.5em;
+  font-weight:200;
+  background-color: rgb(235, 221, 204);
+  padding: .3em 2em;
+  border-radius:0 45% 45% 0;
+  border:dotted .1em black;
+}
+.header a {
+  position: absolute;
+}
+.project_1 h1 {
+  background-color: rgb(235, 221, 204);
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: column
+}
+
+.project_1 img{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100em;
+  height: 20em;
+}
+
+.project_2 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: column;
+  min-height: 3em;
+  margin: 3em 5em;
+  width: 50%;
+  height:50px;
+}
+
+
+.navbar a:hover, a:active {
+  background-color: rgba(238, 230, 216, 0.432);
+}
+
+
+
+
+/************************ 5.0 - Footer ********************/
+
+/* #contact {
+  
+  position:relative;
+} */
+
+footer {
+  background-image: linear-gradient(to right, rgb(245, 241, 244) , rgb(235, 221, 204));
+  border-top: rgb(3, 3, 3) 0.25em solid;
+  width: 100%;
+  height: 4em;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  bottom:0;
+  padding: 0;
+  position: absolute;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+footer ul {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-evenly;
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+}
+
+footer a:link, a:visited {
+  color: rgb(14, 32, 48);
+  text-decoration: none;
+  text-align: center;
+}
+footer a:hover, a:active {
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration: underline black 2px;
+}
+
+
+/*********************** Responsive *******************/
+@media screen and (max-width:992px) { 
+
+} 
+
+
+@media screen and (max-width:768px) {
+  .project_2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .project_2 {
+    height: 100%;
+}
