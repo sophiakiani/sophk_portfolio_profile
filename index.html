@@ -8,7 +8,6 @@
 
 ------------------------------------------------------------->
 
-
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -24,7 +23,7 @@
   </head>
 
   <body>
-
+    <!--Header/Navbar Section--> 
     <nav>
       <img src="./assets/images/dearso_logo.png" alt="DearSo Logo">
       <ul>
@@ -42,50 +41,54 @@
         </li>
       </ul>
     </nav>
-      
+
+    <!--About Section--> 
     <section id="about">
-      <div class="about_container_main">
+      <div class="about_container_main"> <!--contains the main content for the about section flexbox-->
       <div class="about_background about_container_section"><h1>Sophia Kiani</h1></div>
       <div class="about_picture about_container_section"><img src="./assets/images/my_picture.jpg" alt="My Picture"></div>
         <div class="about_bio  about_container_section">
           <h2> Welcome! I am Sophia Kiani and I am a developer creating the most innovative and modern websites in the world.</h2>
         </div>
       </div>
-      </section>
-    
+    </section>
+
+    <!--Projects Section-->
     <section id="projects">
       <div class="project_header">PROJECTS</div> 
-        <a  class="project_1" herf="https://github.com/soph-k/semantic_tagging" target="_blank">
-          <div class="image_container">
-            <img src="./assets/images/project_2.jpg" alt="Project 1">
+        <a class="project_1" herf="https://github.com/soph-k/semantic_tagging" target="_blank"> <!--Enable clickable images theat redirect to another webpage-->
+          <div class="image_container_1">
+            <img src="./assets/images/project_1.jpg" alt="Semantic Tagging">
             <div class="image_title">Semantic Tagging</div>
           </div>
         </a>
-        <a class="project_2 project_container_main" herf="https://github.com/soph-k/prework-about-me">
-          <div class="image_container">
-            <img title="Semantic Tagging" src="./assets/images/project_2.jpg" alt="Project 1">
+
+        <div class="project_container_main">
+        <!-- <div class="image_container "> -->
+        <a  class="image_container project_2" herf="https://github.com/soph-k/prework-about-me">
+            <img src="./assets/images/project_2.jpg" alt="PreWork">
             <div class="image_title">PreWork</div>
+          </a>
+        
+      
+       
+        <!-- <div class="image_container"> -->
+        <a class="project_3 image_container"  herf="https://github.com/soph-k/sophia_kiani_portfolio">
+          <img src="./assets/images/project_3.jpg" alt="DearSO Framework">
+          <div class="image_title">DearSO Framework</div>
         </div>
         </a>
-        <a class="project_3 protject_container_main" herf="#">
-          <div class="image_container">
-          <img title="Semantic Tagging" src="./assets/images/project_2.jpg" alt="Project 1">
-          <h1>DearSO Javascript Framework</h1>
-          <div class="image_title">Semantic Tagging"</div>
-        </div>
-        </a>
+      </div>
     </section>
 
-      
-      <footer id="contact">
-        <ul>
-          <li>Email: <a href="mailto:pcdearso@gmail.com">pcdearso@gmail.com</a></li>
-          <li>© 2021 DearSo Company</li>
-          <li>Github: <a href="https://github.com/Soph-K" target="_blank">Check Me Out</a></li>
-        </ul> 
-      </footer>
-
-  </section>
+    <!--Projects Section-->
+    <footer id="contact">
+      <ul>
+        <li>Email: <a href="mailto:pcdearso@gmail.com">pcdearso@gmail.com</a></li>
+        <li>© 2021 DearSo Company</li>
+        <li>Github: <a href="https://github.com/Soph-K" target="_blank">Check Me Out</a></li>
+      </ul> 
+    </footer>
   </body>
 
 </html>

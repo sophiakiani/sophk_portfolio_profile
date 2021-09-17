@@ -15,7 +15,7 @@ First rough draft of my portfolio.
 
 # Screen Shot
 `
-    ![Preview Of Horiseon Home Webpage](assets/images/sophia_kiani_portfolio_screenshot.png)
+    ![Preview Of Horiseon Home Webpage](./assets/images/sophia_kiani_portfolio_screen_shot.png)
 
 
     
