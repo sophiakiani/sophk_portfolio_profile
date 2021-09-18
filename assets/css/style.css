@@ -98,7 +98,7 @@ nav {
   border-right: rgb(3, 3, 3) .2em solid;
   border-bottom: rgb(3, 3, 3) .75em solid;
   top: 0;
-  height: 70px;
+  height: 5em ;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -107,19 +107,13 @@ nav {
 }
 
 nav ul {
-  padding:0;
-  margin: 0;
   display: flex;
-  justify-content: space-evenly;
 }
 
 nav li  {
-  display: flex;
-  justify-content: space-evenly;
   padding: .2em 2.5em;
   margin: 1.5em 1em;
   font-size: 1.2em;
-  border-radius: 40% 0 40% 0;
   border:rgba(255, 255, 255, 0) solid 2px;
 }
 
@@ -144,36 +138,33 @@ nav a:hover, a:active {
 #about {
   position: relative;
   width: 100%;
-  height: 40em;
+  height: 30em;
   background-image: url(../images/body.jpg);
   border-bottom: solid black .3em;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
-.about_container_main { /*Add the main layout for flexbox in about section*/
+/* The two selectors below determin flex box layout */
+.about_container_main { 
   display:flex;
   flex-flow: row-reverse;
   justify-items: center;
   align-items: center;
-  padding: .25em;
-  
 }
 
 .about_container_section {
   margin: 6em 0em;
-  flex: 1;
   width: 33.3%;
 }
 
+/* The two selectors below add style to the name area*/
 .about_background {
   padding: 0 0 0 3em;
   background-image:linear-gradient(to right, rgb(255, 255, 255) , rgb(255, 224, 241));
   border-radius: 10% 0% 0 10% ;
   border-top: 2px black solid;
-  border-bottom: 10px black solid;
-  height: 6em;
+  border-bottom: 10px black solid; 
 }
 
 .about_background h1{
@@ -186,14 +177,13 @@ nav a:hover, a:active {
 
 .about_bio {
   background-color: rgba(255, 242, 227, 0.8);
-  border-radius: 10% 10% 10% 10%;
+  border-radius: 0 10% 10% 0%;
   border-top:rgb(0, 0, 0) 2px solid;
   border-bottom:rgb(0, 0, 0) .75em solid; 
   min-height: 18em;
 }
 
 .about_bio h2 {
-  flex-shrink: 2;
   padding: 1em 3em;
   font-size: 1.5em;
   font-weight: 100;
@@ -202,16 +192,14 @@ nav a:hover, a:active {
 
 .about_picture  {
   display: flex;
-  justify-items: center;
-  align-content: center;
   justify-content: center;
   align-items: center;
 }
 
 .about_picture img {
   border-radius: 100%;
-  height: 18em;
-  width: 18em;
+  height: 20em;
+  width: 20em;
   border:black solid 4px;
 }
 
@@ -237,7 +225,8 @@ nav a:hover, a:active {
   margin: 3em 0 2em 0;
 }
 
-.project_1 { /*all of the elements for the first projects is seperate*/
+/*project_1 section does not follow the ohter project flex-box style*/
+.project_1 { 
   display: flex;
   justify-items: space-evenly;
   justify-content: space-evenly;
@@ -250,24 +239,25 @@ nav a:hover, a:active {
   background-repeat: no-repeat;
   background-size: cover;
   width: 55em;
-  height: 20em;
+  height: 13em;
   border-radius: 5%;
 }
 
 .image_container_1 {
   position: relative;
-  width: 56em;
+  width: 55.5em;
   border: .5em solid black;
   border-radius: 10% 10% 0 0;
 } 
 
-.project_container_main { /*Add the main layout for flexbox in about section*/
+ /*Add the main layout for flexbox for project 2&3 section*/
+.project_container_main {
   position: relative;
   display:flex;
   flex-wrap: row wrap;
   justify-content: space-around;
   align-items: center;
- 
+  margin: 0 29em;
 }
 
 .project_2 {
@@ -279,8 +269,8 @@ nav a:hover, a:active {
 .project_2 img {
   background-repeat: no-repeat;
   background-size: cover;
-  width: 35em;
-  height: 15em;
+  width: 25em;
+  height: 9em;
   border-radius: 5%;
 }
 
@@ -294,19 +284,21 @@ nav a:hover, a:active {
 .project_3 img {
   background-repeat: no-repeat;
   background-size: cover;
-  width: 35em;
-  height: 15em;
+  width: 25em;
+  height: 9em;
   border-radius: 5%;
 }
 
+
 .image_container {
   position: relative;
-  width: 35.5em;
+  width: 25.5em;
   border: .25em solid black;
   border-radius: 10% 10% 0 0;
 } 
 
-.image_title{
+/*Added to all projects regardless of flex-box*/ 
+.image_title {
   position: absolute;
   bottom: 0;
   background: rgb(224, 197, 221);
@@ -316,13 +308,13 @@ nav a:hover, a:active {
   opacity:1;
   color: white;
   font-size: 20px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
-.image_container a:hover, a:active {
-  background-color: rgba(238, 230, 216, 0.432);
-  transition: .5s ease;
+img a:hover {
+  background-color: rgba(66, 43, 2, 0.432);
+  z-index: 10000;
 }
 
 /************************ 6.0 - Footer ********************/
@@ -364,26 +356,39 @@ footer a:hover, a:active {
 
 
 /*********************** 7.0 Responsive *******************/
-@media screen and (max-width:992px) { 
 
-} 
-
-
-@media screen and (max-width:768px) {
-  
-  nav li,
-  .about_container_section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap:wrap;
+@media screen and (max-width:992px) {
+  nav ul {
+    position: absolute;
+    top: 75px;
+    right: 0;
     width: 100%;
+    z-index: 2;
+    display: inline-block;
   }
+
+  nav li {
+    display: block;
+  }
+
+  nav {
+    height: 20em;
+    position: relative;
+  }
+
+  nav img {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  #about {
+    height: 60em;
+  }
+
+  #about h1 {
+    
+  }
+
 }
 
-@media screen and (max-width:576px) {
-  .about_container_section {
-    width: 100%
-  }
-  .project_2 {
-    height: 100%;
-}
+
