@@ -2,7 +2,7 @@
 First rough draft of my portfolio.
 
 
-# Portfolio Profil
+# Portfolio Profile
 
     This file contains the basic html and css for the webpage of Sophia Kiani's Portfolio, 
     include DearSO logo, naviagtion bar, hero, pictures, and project section with links. 
@@ -21,7 +21,7 @@ First rough draft of my portfolio.
     
 # Link
 `
-    [Check out my portfolio Webpage...](https://github.com/soph-k/sophia_kiani_portfolio_profile/)
+    [Check out my portfolio webpage...](https://github.com/soph-k/sophia_kiani_portfolio_profile/)
     [Or check out my  GitHub repository for my portfolio website](https://soph-k.github.io/sophia_kiani_portfolio_profile/) 
     
  

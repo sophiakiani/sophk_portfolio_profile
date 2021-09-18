@@ -257,7 +257,6 @@ nav a:hover, a:active {
   flex-wrap: row wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 0 29em;
 }
 
 .project_2 {
@@ -357,38 +356,70 @@ footer a:hover, a:active {
 
 /*********************** 7.0 Responsive *******************/
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:1092px) {
+  nav {
+    height: 10em;
+  }
+
   nav ul {
-    position: absolute;
-    top: 75px;
-    right: 0;
+    position: relative;
     width: 100%;
-    z-index: 2;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
   }
 
   nav li {
-    display: block;
+    display: flex;
+    margin: 0;
+    justify-content: center;
   }
 
-  nav {
-    height: 20em;
-    position: relative;
+  .nav_section {
+    width: 100%;
+    flex-direction: column;
   }
 
   nav img {
-    display: flex;
-    align-items: flex-start;
+    display:none;
   }
 
   #about {
     height: 60em;
   }
 
-  #about h1 {
-    
+  .about_container_main {
+    display: flex;
+    flex-direction: column;
   }
 
+  .about_container_section {
+    width: 100%;
+    margin: 1.5em 0;
+  }
+
+  .project_container_main {
+    flex-direction: column;
+  }
+
+  footer{
+    height: 8em;
+  }
+
+  footer ul {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  footer li {
+    display:flex;
+    padding: .25em;
+    justify-items: center;
+  }
+
+  
 }
 
 
