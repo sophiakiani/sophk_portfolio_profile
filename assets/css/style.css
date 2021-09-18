@@ -225,6 +225,10 @@ nav a:hover, a:active {
   margin: 3em 0 2em 0;
 }
 
+.project_margin {
+  margin: 0 30em;
+}
+
 /*project_1 section does not follow the ohter project flex-box style*/
 .project_1 { 
   display: flex;
@@ -263,6 +267,7 @@ nav a:hover, a:active {
   text-align: center;
   font-size: 1em;
   width: 50%;
+
 }
 
 .project_2 img {
@@ -356,7 +361,7 @@ footer a:hover, a:active {
 
 /*********************** 7.0 Responsive *******************/
 
-@media screen and (max-width:1092px) {
+@media screen and (max-width:1100px) {
   nav {
     height: 10em;
   }
@@ -416,10 +421,10 @@ footer a:hover, a:active {
   footer li {
     display:flex;
     padding: .25em;
-    justify-items: center;
+    justify-content: center;
   }
 
-  
+
 }
 
 
