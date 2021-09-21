@@ -425,6 +425,15 @@ footer a:hover, a:active {
   #projects { /*Only the project section will change at a width of 720px*/
    height:auto;
   }
+  .project_1  {
+    width:100%;
+    margin:0;
+    padding:0;
+  }
+  
+  .project_1 img{
+    width: 100%;
+  }
 
   .project_header {
     width: 100%;
@@ -436,6 +445,6 @@ footer a:hover, a:active {
 
   .project_container_main {
     flex-direction: column;
+    width: 100%;
   }
-
-
+}
