@@ -21,8 +21,8 @@ First rough draft of my portfolio.
     
 # Link
 `
-    [Check out my portfolio webpage...](https://github.com/soph-k/sophia_kiani_portfolio_profile/)
-    [Or check out my  GitHub repository for my portfolio website](https://soph-k.github.io/sophia_kiani_portfolio_profile/) 
+    [Check out my portfolio webpage...](https://soph-k.github.io/sophia_kiani_portfolio_profile/)
+    [Or check out my  GitHub repository for my portfolio website](https://github.com/soph-k/sophia_kiani_portfolio_profile/) 
     
  
 
