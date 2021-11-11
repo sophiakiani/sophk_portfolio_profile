@@ -41,7 +41,7 @@
 
 
 ## Link to Deployed Page
-[Demo Live](https://soph-k.github.io/sophia_kiani_portfolio_profile/)
+[Demo Live](https://soph-k.github.io/sophk_portfolio_profile/)
 
 
 ## Preview
