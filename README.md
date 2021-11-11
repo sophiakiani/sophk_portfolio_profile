@@ -27,7 +27,6 @@
 - [Repo](#linktodeployedrepo)
 - [Contribution](#contribution)
 - [License](#license)
-- [Bugs](#bugs)
 
 
 ## Authors
@@ -39,10 +38,6 @@
 ## Features
 - HTML
 - CSS
-    - Bootstrap
-- Javascript
-    - jQuery
-- OpenWeather API
 
 
 ## Link to Deployed Page
